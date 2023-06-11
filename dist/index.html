@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Love </title>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    .submit-button {
+      background-color: #ff4b5c;
+      color: rgb(206, 255, 177);
+      padding: 10px 15px;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 15px;
+    }
+/* Code này đc viết bời Bùi Huyền Vũ Long ( Eren ) ^^ */
+    .submit-button:hover {
+      background-color: #ff2d42;
+    }
+  </style>
+</head>
+<body>
+<div class="blurred-box">
+ <div class="user-login-box">
+    <span class="user-icon"></span>
+    <div class="user-name">My Love 's Code </div>
+    <input class="user-password" type="text" id="password" />
+    <button class="submit-button" onclick="checkPassword()"> Xác Nhận </button>
+    <p id="status"></p>
+  </div>
+</div>
+
+<script>
+  function checkPassword() {
+    var passwordInput = document.getElementById("password").value;
+    var statusElement = document.getElementById("status");
+
+    if (passwordInput === "489336") {
+      statusElement.textContent = "Đúng nè";
+      // Thực hiện chuyển tiếp tới trang .... nếu mật khẩu là đúng . Code này được tạo bởi Bùi Huyền Vũ Long ( Eren) 
+      window.location.href = "https://codebyeren.github.io/mylovebyeren";
+    } else {
+      statusElement.textContent = "Sai ròi . Đúng thời gian bạn sẽ có ^^";
+    }
+  }
+</script>
+
+</body>
+</html>
